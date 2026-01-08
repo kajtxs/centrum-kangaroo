@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umów się - KANGAROO Centrum Fizjoterapii</title>
+    <meta name="description" content="Umów wizytę w KANGAROO Centrum Fizjoterapii. Zadzwoń lub wypełnij formularz." />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Lokalne style dla formularza, aby nie modyfikować głównego pliku CSS */
+        form { display: flex; flex-direction: column; gap: 15px; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-family: inherit; }
+        button { background: #4caf50; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 16px; }
+        button:hover { background: #388e3c; }
+        label { font-weight: bold; margin-bottom: 5px; display: block; }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>KANGAROO Centrum Fizjoterapii</h1>
+  <p>Profesjonalna fizjoterapia i rehabilitacja</p>
+</header>
+
+<nav>
+  <a href="index.html">Strona główna</a>
+  <a href="umow-sie.html">Umów się</a>
+  <a href="kontakt.html">Kontakt</a>
+  <a href="galeria.html">Galeria</a>
+</nav>
+
+<section>
+  <h2>Rejestracja wizyty</h2>
+  <div class="services"> <div class="card">
+      <h3>Rejestracja telefoniczna</h3>
+      <p>Najszybszy sposób na umówienie wizyty to kontakt telefoniczny w godzinach pracy gabinetu.</p>
+      <p style="font-size: 1.2em; font-weight: bold; color: #2e7d32;">tel. +48 123 456 789</p>
+      <p>Czynne: Pn-Pt 8:00 - 20:00</p>
+    </div>
+
+    <div class="card">
+      <h3>Formularz online</h3>
+      <p>Wypełnij formularz, a oddzwonimy z propozycją terminu.</p>
+        <form action="https://formspree.io/f/mbdlnbwy" method="POST">
+            
+            <div>
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required placeholder="np. Jan Kowalski">
+            </div>
+            
+            <div>
+                <label for="email">Twój e-mail (do odpowiedzi):</label>
+                <input type="email" id="email" name="email" required placeholder="jan@example.com">
+            </div>
+
+            <div>
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="np. 500 600 700">
+            </div>
+            
+            <div>
+                <label for="service">Rodzaj usługi:</label>
+                <select id="service" name="service">
+                    <option value="konsultacja">Konsultacja fizjoterapeutyczna</option>
+                    <option value="masaz">Masaż leczniczy</option>
+                    <option value="rehabilitacja">Rehabilitacja po urazie</option>
+                    <option value="inne">Inne</option>
+                </select>
+            </div>
+            
+            <button type="submit">Wyślij zgłoszenie</button>
+        </form>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Masz pytania?</h2>
+  <p>Jeśli nie wiesz, jaki zabieg wybrać, skontaktuj się z nami bezpośrednio.</p>
+  <a href="kontakt.html">Przejdź do kontaktu</a>
+</section>
+
+<footer>
+  <p>© 2026 KANGAROO Centrum Fizjoterapii</p>
+</footer>
+
+</body>
+</html>
